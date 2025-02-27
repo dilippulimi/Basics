@@ -4,12 +4,11 @@ import java.util.stream.Collectors;
 public class FirstNonRepeatedCharacter {
 
     public static void main(String[] args) {
-        System.out.println(firstNonRepeatedChar("wewol"));
+        System.out.println(firstNonRepeatedChar("wewfghgjhvkjbkhjvhggecghchvjryuvuol"));
     }
 
     public static int firstNonRepeatedChar(String s){
-
-        LinkedHashMap<Character, List<Integer>> map = new LinkedHashMap<>();
+        Map<Character, List<Integer>> map = new HashMap<>();
 
         for(int i=0;i<s.length();i++){
             char c = s.charAt(i);
